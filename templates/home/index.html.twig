@@ -10,7 +10,7 @@
 </div>
 
 <div>
-    <img id="game-img" src="{{ asset("img/image.svg") }}" alt="">
+    <img id="game-img" src="{{ asset("img/image.svg") }}" alt="" width="200px">
     <div class="description">
         <h3 id="title"></h3>
         <div class="infos">
@@ -37,7 +37,6 @@
                 select.innerText = null
                 e.preventDefault()
                 const searchValue = search.value
-                console.log(searchValue)
                 const url = '/games'
                 fetch(url, {
                     method: 'POST',
